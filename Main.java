@@ -33,5 +33,17 @@ class Main {
       } else {
         System.out.println("\nIncorrect");
       }
-      
-      
+      TimeUnit.SECONDS.sleep(1);
+      clearScreen();
+      String answerTwo;
+      System.out.println("John P. has $56.99. He buys 10 action figures at Walmart for $5.99, then realizes he was stupid for buying them. He then returns 5 of his action figures back. ");
+      TimeUnit.SECONDS.sleep(7);
+      clearScreen();
+      Scanner sTwo = new Scanner(System.in);
+      TimeUnit.SECONDS.sleep(2);
+      System.out.println("What was the last name initial of John?\n");
+      answerTwo = sTwo.nextLine();
+      if(answerOne == "P"); {
+        System.out.print("\nCorrect!");
+        score += 1;
+      }
