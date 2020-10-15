@@ -47,3 +47,25 @@ class Main {
         System.out.print("\nCorrect!");
         score += 1;
       }
+      TimeUnit.SECONDS.sleep(1);
+      clearScreen();
+      String answerThree;
+      System.out.println("You go on a bicycle ride with your friend TJ. Tony hated doing house chores all alone - he wanted to hang out as well.");
+      TimeUnit.SECONDS.sleep(7);
+      clearScreen();
+      Scanner sThree = new Scanner(System.in);
+      TimeUnit.SECONDS.sleep(2);
+      System.out.println("What is TJ's first name? Type in the number corresponding to your answer.\n");
+      System.out.println("\n1 - Tony\n");
+      System.out.println("2 - Tyler\n");
+      System.out.println("3 - TJ\n");
+      System.out.println("4 - Not specified\n");
+      answerThree = sThree.nextLine();
+      if(answerOne == "4"); {
+        System.out.print("\nCorrect!");
+        score += 1;
+      }
+      TimeUnit.SECONDS.sleep(1);
+      clearScreen();
+
+      
