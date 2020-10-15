@@ -27,7 +27,11 @@ class Main {
       System.out.println("What was the name of your red-head sibling?\n");
       answerOne = s.nextLine();
 
-      if(answerOne == "Sia"); {
+      if(answerOne == "Sia") {
         System.out.print("\nCorrect!");
         score += 1;
+      } else {
+        System.out.println("\nIncorrect");
       }
+      
+      
