@@ -69,3 +69,19 @@ class Main {
       clearScreen();
 
       
+
+    } 
+    else if(menuOption == 2){
+      System.out.println("\nInstructions: \n\nYou will be tasked to inflate a balloon to it's max potential - however, don't inflate it too much (OR IT WILL POP!) Press enter to go back to the home screen");
+    }
+    else {
+      System.out.println("die");
+    }
+
+  }
+  public static void clearScreen() {
+    System.out.println("\033[H\033[2J");
+    System.out.flush();
+  
+  }
+}
