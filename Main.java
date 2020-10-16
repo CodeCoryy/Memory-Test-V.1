@@ -26,8 +26,9 @@ class Main {
       TimeUnit.SECONDS.sleep(2);
       System.out.println("What was the name of your red-head sibling?\n");
       answerOne = s.nextLine();
+      String actualA1 = "Sia";
 
-      if(answerOne == "Sia") {
+      if(answerOne.equals(actualA1)) {
         System.out.print("\nCorrect!");
         score += 1;
       } else {
@@ -43,9 +44,13 @@ class Main {
       TimeUnit.SECONDS.sleep(2);
       System.out.println("What was the last name initial of John?\n");
       answerTwo = sTwo.nextLine();
-      if(answerOne == "P"); {
+      String actualA2 = "P";
+      if(answerOne.equals(actualA2)) {
         System.out.print("\nCorrect!");
         score += 1;
+      }
+      else {
+        System.out.println("\nIncorrect!");
       }
       TimeUnit.SECONDS.sleep(1);
       clearScreen();
@@ -61,14 +66,16 @@ class Main {
       System.out.println("3 - TJ\n");
       System.out.println("4 - Not specified\n");
       answerThree = sThree.nextLine();
-      if(answerOne == "4"); {
+      String actualA3 = "4";
+      if(answerOne.equals(actualA3)) {
         System.out.print("\nCorrect!");
         score += 1;
       }
+      else {
+        System.out.print("\nIncorrect!");
+      }
       TimeUnit.SECONDS.sleep(1);
       clearScreen();
-
-      
 
     } 
     else if(menuOption == 2){
