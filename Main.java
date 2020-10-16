@@ -40,12 +40,11 @@ class Main {
       System.out.println("John P. has $56.99. He buys 10 action figures at Walmart for $5.99, then realizes he was stupid for buying them. He then returns 5 of his action figures back. ");
       TimeUnit.SECONDS.sleep(7);
       clearScreen();
-      Scanner sTwo = new Scanner(System.in);
       TimeUnit.SECONDS.sleep(2);
       System.out.println("What was the last name initial of John?\n");
-      answerTwo = sTwo.nextLine();
+      answerTwo = s.nextLine();
       String actualA2 = "P";
-      if(answerOne.equals(actualA2)) {
+      if(answerTwo.equals(actualA2)) {
         System.out.print("\nCorrect!");
         score += 1;
       }
@@ -58,16 +57,15 @@ class Main {
       System.out.println("You go on a bicycle ride with your friend TJ. Tony hated doing house chores all alone - he wanted to hang out as well.");
       TimeUnit.SECONDS.sleep(7);
       clearScreen();
-      Scanner sThree = new Scanner(System.in);
       TimeUnit.SECONDS.sleep(2);
       System.out.println("What is TJ's first name? Type in the number corresponding to your answer.\n");
       System.out.println("\n1 - Tony\n");
       System.out.println("2 - Tyler\n");
       System.out.println("3 - TJ\n");
       System.out.println("4 - Not specified\n");
-      answerThree = sThree.nextLine();
+      answerThree = s.nextLine();
       String actualA3 = "4";
-      if(answerOne.equals(actualA3)) {
+      if(answerThree.equals(actualA3)) {
         System.out.print("\nCorrect!");
         score += 1;
       }
@@ -76,13 +74,38 @@ class Main {
       }
       TimeUnit.SECONDS.sleep(1);
       clearScreen();
-
+      String answerFour;
+      System.out.println("Cory has $50.51. He buys 3 packs of swedish fish for $3. He then buys the knew 'Genshin Impact' game for $25 on Playstation. He goes to the cashier, Sally, to check out.");
+      TimeUnit.SECONDS.sleep(8);
+      clearScreen();
+      TimeUnit.SECONDS.sleep(2);
+      System.out.println("How much money did Cory intially have?\n");
+      answerFour = s.nextLine();
+      String actualA4 = "50.51";
+      if(answerFour.equals(actualA4)) {
+        System.out.print("\nCorrect!");
+        score += 1;
+      }
+      else {
+        System.out.print("\nIncorrect!");
+      }
+      String name;
+      TimeUnit.SECONDS.sleep(1);
+      clearScreen();
+      System.out.println("Congratulations! You completed the Memory Test! ");
+      TimeUnit.SECONDS.sleep(1);
+      System.out.println("\n\nType your name here:\n\n");
+      name = s.nextLine();
+      System.out.println("\nThank you " + name + " for completing this memory test.");
+      System.out.println("\nYour score is " + score + "/4");
+      TimeUnit.SECONDS.sleep(1);
+      System.out.println("\n\nPress 1 to retry");
     } 
     else if(menuOption == 2){
-      System.out.println("\nInstructions: \n\nYou will be tasked to inflate a balloon to it's max potential - however, don't inflate it too much (OR IT WILL POP!) Press enter to go back to the home screen");
+      System.out.println("\nInstructions: \n\nThe objective of the game is to memorize every important detail of the questions given. You will be given around 5 to 10 seconds to read each question and analyize it. After the time runs out, you will be given a question - and must answer it as accurately as possible.");
     }
     else {
-      System.out.println("die");
+      System.out.println("Pick the NUMBER corresponding to what action you want to do");
     }
 
   }
