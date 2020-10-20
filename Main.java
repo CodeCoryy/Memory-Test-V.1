@@ -2,9 +2,14 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-
 class Main {
+//THROWS EXCEPTION WAS USED FOR SLEEP; USED SLEEP TO MAKE PEOPLE MORE FORGETFUL AND BETTER GAME FLOW
+
+
   public static void main(String[] args) throws Exception{
+
+    //MAIN MENU
+
     boolean retry2 = true;
     boolean retry1 = true;
     while(retry2 == true || retry1 == true) {
@@ -16,9 +21,13 @@ class Main {
       int menuOption = scan.nextInt();
       clearScreen();
     
+    //PLAY OPTION
 
       if(menuOption == 1) { 
         retry1 = false;
+
+      // WHILE LOOP USED FOR RETRY
+
         while (retry1 == false) {
           int sRetry1;
           int score = 0;
@@ -31,6 +40,8 @@ class Main {
           System.out.println("What was the name of your red-head sibling?\n");
           answerOne = s.nextLine();
           String actualA1 = "Sia";
+
+        //CHECKS IF ANSWER IS RIGHT OR WRONG
 
           if(answerOne.equals(actualA1)) {
             System.out.print("\nCorrect!");
@@ -113,6 +124,7 @@ class Main {
             System.out.println("Press 1 to return bud");
           }
         }
+        //Other menu OPTION, INCLUDES LOOP AS WELL
       } 
       else if(menuOption == 2) {
         retry2 = false;
@@ -130,11 +142,13 @@ class Main {
             System.out.println("Press 1 to return bud");
           }
         }
+        // IF YOU DON'T TYPE OPTION, IT WILL TELL YOU TO
       }
       else {
         System.out.println("Pick the NUMBER CORRESPONDING to what action you want to do");
       }
     }
+    //USED CLEAR SCREEN FOR BETTER GAME lOOK AS WELL AS SUSPENSION (ALSO TO HIDE PREVIOUS ANSWERS)
   }
   public static void clearScreen() {
     System.out.println("\033[H\033[2J");
